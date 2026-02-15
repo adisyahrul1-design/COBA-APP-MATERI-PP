@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>PPKN Kelas X - Bhinneka Tunggal Ika</title>
+
+<style>
+body{
+    font-family: Arial;
+    margin:0;
+    background:linear-gradient(135deg,#b30000,#ff4d4d);
+    text-align:center;
+    color:white;
+}
+
+header{
+    padding:20px;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.menu{
+    margin:15px;
+}
+
+button{
+    padding:10px 15px;
+    margin:5px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+.btn{
+    background:white;
+    color:#b30000;
+}
+
+.exit{
+    background:black;
+    color:white;
+}
+
+.card{
+    background:white;
+    color:black;
+    margin:20px;
+    padding:20px;
+    border-radius:15px;
+}
+
+.timer{
+    font-weight:bold;
+    color:red;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+PPKN Kelas X - Bhinneka Tunggal Ika
+</header>
+
+<div class="menu">
+<button class="btn" onclick="tampilMateri()">Materi</button>
+<button class="btn" onclick="mulaiKuis()">Kuis</button>
+<button class="btn" onclick="lihatSkor()">Papan Skor</button>
+<button class="btn" onclick="exportSkor()">Export Skor</button>
+<button class="exit" onclick="keluar()">Exit</button>
+</div>
+
+<div id="konten" class="card">
+Selamat datang 👋<br>Pilih menu di atas.
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
